@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.logo img {
+  width: 100px;
+  margin: auto;
+}
+
+ul {
+  overflow-wrap: normal;
+  display: grid;
+  grid-auto-flow: column;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  font-size: 1.2vw;
+}
+
+.menu {
+  background-color: transparent;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: salmon;
+  padding: 4px;
+}
+
+.menu__item {
+  background-color: transparent;
+}
+
+
+.menu__item a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu__item a:hover {
+  text-decoration: underline;
+}
+
+.formulario {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1vh;
+  font-size: 1.4vw;
+}
+
+.formulario button {
+
+  justify-self: center;
+}
+
+.formulario label {
+
+  justify-self: center;
+}
+.gustos {
+
+  margin-left: 50%;
+  margin-right: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.mapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+ margin-inline: 100px;
+}
+
+body{
+  height: auto;
+  background-image: url(../img/Fondo.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30%;
+  font-size: 1.4vw;
+} 
+
+@media (max-width: 480px) {
+  .menu ul {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+}
