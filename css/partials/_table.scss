@@ -1,0 +1,32 @@
+@mixin table() {
+  color: #fff;
+  width: 100%;
+  @include flex-center;
+}
+
+.tables {
+  //   background: rgba(0, 0, 0, 0.184);
+  @include flex-center;
+  justify-content: flex-start;
+  border-collapse: collapse;
+  width: 100%;
+  align-items: flex-start
+}
+
+.tabla {
+  @include table;
+
+  .table-header {
+    color: lightblue;
+    font-size: 24px;
+  }
+
+  .table-item {
+    border: 1px solid black;
+  }
+
+  td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+  }
+}

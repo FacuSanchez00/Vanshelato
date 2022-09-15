@@ -1,0 +1,28 @@
+.tables {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  border-collapse: collapse;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.tabla {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabla .table-header {
+  color: lightblue;
+  font-size: 24px;
+}
+.tabla .table-item {
+  border: 1px solid black;
+}
+.tabla td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}/*# sourceMappingURL=estilo.css.map */
