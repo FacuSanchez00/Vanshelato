@@ -7,6 +7,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+nav {
+  display: flex;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -29,12 +33,21 @@ ul {
   align-items: center;
   width: 60%;
   font-size: 1.2vw;
+  padding: 0;
 }
-.video{
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-left: 40px;
+
+.video-container{
   background-color: rgba(0, 0, 0, 0.184);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2%;
+  margin: 20px;
+}
+
+.video-container .video {
+  width: 100%;
   animation-name: example;
   animation-duration: 25s;
 }
@@ -80,30 +93,40 @@ ul {
   
   justify-self: center;
 }
-.gustos {
-  
-  margin-left: 50%;
-  margin-right: 50%;
-  display: grid;
+
+
+.tabla th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .mapa {
+  background-color: rgba(0, 0, 0, 0.184);
   display: flex;
   align-items: center;
   justify-content: center;
+  width: auto;
+  padding: 2%;
+  margin: 20px;
 }
 
-.video {
- margin-inline: 100px;
-}
 
 body{
   height: auto;
+  width: auto;
   background-image: url(../img/Fondo.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+footer {
+  background-color: rgba(250, 128, 114, 0.274);
 }
 
 footer section {
@@ -112,16 +135,42 @@ footer section {
   justify-content: space-between;
   align-items: center;
   margin-top: 30%;
-  font-size: 1vw;
+  font-size: 1.4vw;
 } 
-
-
 
 @media (max-width: 480px) {
   .menu ul {
+    margin: auto;
     display: grid;
     grid-auto-flow: row;
+    font-size: 14px;
     justify-content: center;
+    align-items: center;
   }
+
+  .menu ul li {
+    text-align: center;
+  }
+
+  .video-container {
+    width: auto;
+    height: auto;
+  }
+
+  .video-container.video {
+    width: auto;
+    height: auto;
+  }
+  .mapa {
+    width: auto;
+    height: auto;
+  }
+
+  .mapa .map {
+    width: 100%;
+    height: auto;
+  }
+
+
 
 }
