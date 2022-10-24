@@ -176,8 +176,14 @@ footer section {
 }
 
 @media (max-width: 780px)  {
+  .tabla{
+    width: auto;
+  }
   .tabla td {
-   font-size: 12px;
+   font-size: 10px;
+  }
+  .tabla th {
+   font-size: 14px;
   }
 }
 
