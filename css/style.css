@@ -82,6 +82,7 @@ ul {
   align-items: center;
   row-gap: 1vh;
   font-size: 1.4vw;
+  margin-bottom: 150px;
 }
 
 .formulario button {
