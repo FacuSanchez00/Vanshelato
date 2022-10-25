@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanshelato - Contacto</title>
+    <title>Vanshelato - Hace Tu Pedido</title>
     <meta name="description" content="Estamos para brindarte el mejor servicio">
-    <meta name="keywords" content="Helado, Sabores, Sucursales, Envio, Precio, Contacto">
+    <meta name="keywords" content="Helado, Sabores, Sucursales, Envio, Precio, Hace Tu Pedido">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/Logo Vanshe.jpg" type="image/x-icon">
 </head>
@@ -25,7 +25,7 @@
                         <a href="nuestras-sucursales.html">Nuestras Sucursales</a>
                     </li>
                     <li class="menu__item">
-                        <b><a href="contacto.html">Contacto</a></b>
+                        <b><a href="contacto.html">Hace Tu Pedido</a></b>
                     </li>
                     <li class="menu__item">
                         <a href="nuestros-sabores.html">Nuestros Sabores</a>
@@ -37,16 +37,24 @@
 
         <br>
         <form class="formulario">
-            <label for="fname">First name:</label><br>
-            <input required type="text" id="fname" name="fname"><br>
-            <label for="fname">Middle name:</label><br>
-            <input required type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input required type="text" id="lname" name="lname"><br>
+            <label for="fname">Nombre y Apellido</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="fname">Celular</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Dirección</label><br>
+            <input type="text" id="lname" name="lname"><br>
             <label for="lname">Email:</label><br>
-            <input required type="text" id="email" name="email">
+            <input type="text" id="email" name="email">
+            <label for="lname">Tamaño</label><br>
+            <select name="select" onchange="elegirTamanio(value)">
+                <option value="1">1/4 KG</option>
+                <option value="2">1/2 KG</option>
+                <option value="3">1 KG</option>
+            </select>
+            <label for="lname">Gustos</label><br>
+            <input type="text" id="email" name="email" onchange="guardarGustos(value)">
             <br>
-            <button type="submit">Enviar</button>
+            <button type="submit" onclick="enviarPedido()">Enviar Pedido</button>
         </form>
         <br>
         <br>
@@ -72,8 +80,9 @@
                 <br>
                 <p class="copyright">Copyright © 1999-2020 Vanshelato S.R.L.</p>
             </section>
-           
+
         </footer>
+        <script src="../JS/hacerpedido.js"></script>
 </body>
 
 </html>
