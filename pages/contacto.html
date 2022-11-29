@@ -38,7 +38,7 @@
         <br>
         <form class="formulario">
             <label for="fname">Nombre y Apellido</label><br>
-            <input type="text" id="fname" name="fname"><br>
+            <input type="text" id="nombreApellido" name="fname"><br>
             <label for="fname">Celular</label><br>
             <input type="text" id="fname" name="fname"><br>
             <label for="lname">Dirección</label><br>
@@ -52,7 +52,7 @@
                 <option value="3">1 KG</option>
             </select>
             <label for="lname">Gustos</label><br>
-            <input type="text" id="email" name="email" onchange="guardarGustos(value)">
+            <input type="text" onchange="guardarGustos(value)">
             <br>
             <button type="submit" onclick="enviarPedido()">Enviar Pedido</button>
         </form>
