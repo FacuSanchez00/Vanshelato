@@ -20,14 +20,65 @@
 // } else if (!tamano) {
 //   alert("ingrese un tamaño");
 // } else if (!gustos) {
-//   alert("ingrese gustos");
-// }
+  //   alert("ingrese gustos");
+  // }
+  
+  // const usuario = {
+    //   nombre: document.getElementById("nombreApellido").value,
+    //   email: document.getElementById("email").value,
+    // };
+    //Guardar datos del usuario
+    // localStorage.setItem("user", JSON.stringify(usuario));
+    
+const gustos = [
+  {
+    gusto: "Seleccionar",
+  },
+  {
+    gusto: "Crema Americana",
+  },
+  {
+    gusto: "Crema del cielo",
+  },
+  {
+    gusto: "Vainilla",
+  },
+  {
+    gusto: "Coco con dulce de leche",
+  },
+  {
+    gusto: "Frutilla epecial",
+  },
+  {
+    gusto: "Granizado",
+  },
+  {
+    gusto: "Menta granizada",
+  },
+  {
+    gusto: "Crema de cerezas",
+  },
+  {
+    gusto: "Crema flan al caramelo",
+  },
+  {
+    gusto: "Banana Split",
+  },
+  {
+    gusto: "Frutos del bosque",
+  },
+  {
+    gusto: "Mousse de limon",
+  },
+  {
+    gusto: "Crema KitKat",
+  },
+];
+var select = document.getElementById("gustosSelect"); 
+for (let index = 0; index < gustos.length; index++) {
+  console.log(gustos[index].gusto)
+  var option = document.createElement("option");
+  option.text = gustos[index].gusto;
+  select.add(option);
+}
 
-//Guardar datos del usuario
-
-const usuario = {
-  nombre: document.getElementById("nombreApellido"),
-  email: document.getElementById("email"),
-};
-
-localStorage.setItem("user", JSON.stringify(usuario));
